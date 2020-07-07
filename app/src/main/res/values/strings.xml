@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Quản Lý Thu Chi</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Bỏ cho vui</string>
+
+    <string name="menu_thu">Khoản Thu</string>
+    <string name="menu_chi">Khoản Chi</string>
+    <string name="menu_thongke">Thống Kê Thu Chi</string>
+    <string name="menu_gioithieu">Giới Thiệu</string>
+    <string name="menu_thoat">Thoát</string>
+    <string name="signin">THÊM</string>
+    <string name="cancel">BỎ QUA</string>
+    <string name="add_avenue_dialog_title">Thêm Khoản Thu</string>
+    <string name="dialog_btn_add">ADD</string>
+    <string name="dialog_btn_cancel">CANCEL</string>
+    <string name="dialog_btn_update">UPDATE</string>
+    <string name="dialog_edit_header">Chỉnh Sửa Dữ Liệu</string>
+    <string name="txt_thongke_ngaydau">Ngày đầu</string>
+    <string name="txt_thongke_ngaycuoi">Ngày cuối</string>
+    <string name="txt_thongke_khoanthu">Tổng Thu</string>
+    <string name="txt_thongke_khoanchi">Tổng Chi</string>
+    <string name="txt_thongke_tongthuchi">Kết Toán</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

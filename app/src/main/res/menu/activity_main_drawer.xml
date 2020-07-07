@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_thu"
+            android:icon="@drawable/ic_revenue_money"
+            android:title="@string/menu_thu"/>
+        <item
+            android:id="@+id/nav_chi"
+            android:icon="@drawable/ic_spend_money"
+            android:title="@string/menu_chi" />
+        <item
+            android:id="@+id/nav_thongke"
+            android:icon="@drawable/ic_thongke_money"
+            android:title="@string/menu_thongke" />
+    </group>
+
+    <item android:title="Về chúng tôi">
+        <menu>
+            <item
+                android:id="@+id/nav_aboutUs"
+                android:icon="@drawable/ic_about_us"
+                android:title="@string/menu_gioithieu" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit"
+                android:title="@string/menu_thoat" />
+        </menu>
+    </item>
+
+</menu>

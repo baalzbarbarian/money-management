@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_custom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/layout_style"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/dialog_header"
+            android:text="@string/dialog_edit_header"
+            android:textColor="@color/dialog_text_color_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/dialog_text_color_custom"
+            style="@style/dialog_editText"
+            android:hint="Tên loại thu"
+            android:id="@+id/tvSetName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:textColor="@color/dialog_text_color_custom"
+                android:id="@+id/edtTypeNewName"
+                style="@style/dialog_editText"
+                android:hint="Nhập tên LOẠI THU mới"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="@string/dialog_btn_cancel"
+            android:background="@drawable/dialog_btn"
+            style="@style/dialog_btn"
+            android:id="@+id/dialog_edtLT_btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/dialog_edtLT_btnEdit"
+            android:text="@string/dialog_btn_update"
+            android:background="@drawable/dialog_btn"
+            style="@style/dialog_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

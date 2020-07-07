@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background_fragment_gt">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="#FFF"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/dialog_text_color_custom"
+            android:text="Thêm Khoản Chi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:textAlignment="center"
+            android:id="@+id/spinnerAddKT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.TranslucentDecor"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textLayoutAmout"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/dialog_text_color_custom"
+            android:textColor="@color/dialog_text_color_custom"
+            android:textSize="13sp"
+            android:id="@+id/edtDlgThuAmount"
+            android:layout_marginLeft="10dp"
+            android:hint="Nhập số tiền"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:id="@+id/textLayoutDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:inputType="date"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/dialog_text_color_custom"
+                android:textColor="@color/dialog_text_color_custom"
+                android:textSize="13sp"
+                android:id="@+id/edtDlgThuDate"
+                android:layout_marginLeft="10dp"
+                android:hint="dd/MM/yyyy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnDateDialogKhoanThu"
+            android:text="Picker Date"
+            android:background="@drawable/btn_date_custom"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:background="@drawable/dialog_btn"
+            android:text="@string/dialog_btn_cancel"
+            style="@style/dialog_btn"
+            android:id="@+id/btnDlgThuCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@drawable/dialog_btn"
+            android:text="@string/dialog_btn_add"
+            style="@style/dialog_btn"
+            android:id="@+id/btnDlgThuAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
